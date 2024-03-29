@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class BaseController {
     @GetMapping
-    public String hui(){
-        return "hui";
+    public String endpoint(){
+        return "hello world";
     }
 }
