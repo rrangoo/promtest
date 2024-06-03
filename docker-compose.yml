@@ -8,6 +8,8 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8080:8080"
+    networks:
+      monitoring:
   prometheus:
     image: prom/prometheus
     depends_on:
@@ -19,8 +21,6 @@ services:
       - ./prometheus:/prometheus
     networks:
       monitoring:
-        aliases:
-          - prometheus
 
 networks:
   monitoring:
