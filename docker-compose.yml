@@ -1,21 +1,17 @@
 version: '3.7'
 
 services:
-  grafana:
-    build: './config/grafana'
+  sample-spring-app:
+    image: sample-spring-app:0.0.1
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
-      - 3000:3000
-    volumes:
-      - ./grafana:/var/lib/grafana
-    environment:
-      - GF_SECURITY_ADMIN_USER=admin
-      - GF_SECURITY_ADMIN_PASSWORD=admin
-    networks:
-      monitoring:
-        aliases:
-          - grafana
+      - "8080:8080"
   prometheus:
     image: prom/prometheus
+    depends_on:
+      - sample-spring-app
     ports:
       - 9090:9090
     volumes:
@@ -25,5 +21,6 @@ services:
       monitoring:
         aliases:
           - prometheus
+
 networks:
   monitoring:
