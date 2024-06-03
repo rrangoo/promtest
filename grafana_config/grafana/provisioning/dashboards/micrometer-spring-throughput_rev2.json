@@ -44,7 +44,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "Prometheus",
+      "datasource": "jargus",
       "fieldConfig": {
         "defaults": {
           "custom": {}
@@ -133,7 +133,7 @@
     },
     {
       "columns": [],
-      "datasource": "Prometheus",
+      "datasource": "jargus",
       "fieldConfig": {
         "defaults": {
           "custom": {}
@@ -204,7 +204,7 @@
         "rgba(237, 129, 40, 0.89)",
         "#d44a3a"
       ],
-      "datasource": "Prometheus",
+      "datasource": "jargus",
       "decimals": 1,
       "fieldConfig": {
         "defaults": {
@@ -301,7 +301,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "jargus",
       "fieldConfig": {
         "defaults": {
           "custom": {}
@@ -398,7 +398,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "jargus",
       "fieldConfig": {
         "defaults": {
           "custom": {}
@@ -498,7 +498,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "jargus",
       "fieldConfig": {
         "defaults": {
           "custom": {}
@@ -617,7 +617,7 @@
       "bars": false,
       "dashLength": 10,
       "dashes": false,
-      "datasource": "Prometheus",
+      "datasource": "jargus",
       "fieldConfig": {
         "defaults": {
           "custom": {}
@@ -723,7 +723,7 @@
           "text": "None",
           "value": ""
         },
-        "datasource": "Prometheus",
+        "datasource": "jargus",
         "definition": "",
         "description": null,
         "error": null,
@@ -754,7 +754,7 @@
           "text": "host.docker.internal:8080",
           "value": "host.docker.internal:8080"
         },
-        "datasource": "Prometheus",
+        "datasource": "jargus",
         "definition": "",
         "description": null,
         "error": null,

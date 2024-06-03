@@ -1,0 +1,11 @@
+apiVersion: 1
+
+datasources:
+  - name: jargus
+    label: jargus-task1
+    type: prometheus
+    access: proxy
+    editable: true
+    httpMethod: GET
+    url: http://host.docker.internal:8081/task1
+    isDefault: true
